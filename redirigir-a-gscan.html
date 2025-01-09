@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirigiendo...</title>
     <script type="text/javascript">
-        // Redirigir al protocolo personalizado inmediatamente
-        window.location.href = "gscan://p=firmar=N&debugMode=true";
-
-        // Cerrar la ventana después de 3 segundos
+        // Redirige automáticamente después de 3 segundos
         setTimeout(function() {
-            window.close(); // Cierra la ventana actual
-        }, 3000);  // Después de 3 segundos
+            window.location.href = "gscan://p=firmar=N&debugMode=true";
+        }, 3000);  // 3 segundos
     </script>
 </head>
-<body style="margin: 0; padding: 0; overflow: hidden;">
-    <!-- Nada se muestra en la página -->
+<body>
+    <h1>Redirigiendo...</h1>
+    <p>Si no eres redirigido automáticamente, haz clic <a href="gscan://p=firmar=N&debugMode=true">aquí</a>.</p>
 </body>
 </html>
