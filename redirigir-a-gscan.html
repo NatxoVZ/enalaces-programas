@@ -12,11 +12,11 @@
             iframe.src = "gscan://p=firmar=N&debugMode=true"; // El enlace al programa
             document.body.appendChild(iframe);
 
-            // Esperar más tiempo antes de cerrar la ventana (por ejemplo, 10 segundos)
+            // Esperar un tiempo adecuado antes de cerrar la ventana
             setTimeout(function() {
-                window.close(); // Cerrar la ventana después de 10 segundos
-            }, 10000);  // Espera 10 segundos antes de intentar cerrar la ventana
-        }, 5000);  // Espera 5 segundos antes de iniciar el proceso
+                window.close(); // Cerrar la ventana después de un tiempo suficiente
+            }, 8000);  // Espera 8 segundos antes de intentar cerrar la ventana
+        }, 3000);  // Espera 3 segundos antes de iniciar el proceso
     </script>
 </head>
 <body>
