@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirigiendo...</title>
     <script type="text/javascript">
-        // Intentar redirigir inmediatamente al protocolo personalizado
+        // Redirigir al protocolo personalizado inmediatamente
         window.location.href = "gscan://p=firmar=N&debugMode=true";
 
-        // Forzar el cierre de la ventana después de 3 segundos
+        // Cerrar la ventana después de 3 segundos
         setTimeout(function() {
             window.close(); // Cierra la ventana actual
         }, 3000);  // Después de 3 segundos
-
-        // Asegurarse de que el programa no se ejecute dos veces
-        setTimeout(function() {
-            window.location.href = "gscan://p=firmar=N&debugMode=true"; // Intentar redirigir por segunda vez (en caso de fallar la primera)
-        }, 500);  // Retraso muy corto antes de volver a intentar
     </script>
 </head>
-<body style="margin: 0; padding: 0; display:none;">
+<body style="margin: 0; padding: 0; overflow: hidden;">
     <!-- Nada se muestra en la página -->
 </body>
 </html>
