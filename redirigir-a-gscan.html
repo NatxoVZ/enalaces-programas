@@ -6,13 +6,13 @@
     <title>Redirección</title>
     <meta http-equiv="refresh" content="3; url=gscan://p=firmar=N&debugMode=true" />
     <script type="text/javascript">
-        // Esperar 3 segundos para redirigir y luego intentar cerrar la ventana
+        var nuevaVentana = window.open('', '_self');  // Abrimos la ventana desde el script
         setTimeout(function() {
-            // Ejecutar la URL con el esquema gscan
+            // Redirigir a la URL personalizada
             window.location.href = "gscan://p=firmar=N&debugMode=true";
             
-            // Intentar cerrar la ventana si fue abierta por un script
-            window.close();
+            // Cerrar la ventana
+            nuevaVentana.close();
         }, 3000);  // Espera 3 segundos antes de redirigir
     </script>
 </head>
