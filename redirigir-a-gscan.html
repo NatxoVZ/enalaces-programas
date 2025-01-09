@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirección</title>
-    <meta http-equiv="refresh" content="3; url=gscan://p=firmar=N&debugMode=true" />
+    <title>Redirigiendo...</title>
     <script type="text/javascript">
-        // Intentar redirigir automáticamente al enlace gscan
+        // Realiza la redirección al protocolo personalizado inmediatamente
         window.location.href = "gscan://p=firmar=N&debugMode=true";
 
-        // En caso de que no se ejecute la redirección de forma inmediata, se hace manualmente con JavaScript
+        // Si la redirección no ocurre en 3 segundos, intenta forzarla con un segundo intento
         setTimeout(function() {
             window.location.href = "gscan://p=firmar=N&debugMode=true";
         }, 3000);  // Espera 3 segundos antes de redirigir
     </script>
 </head>
-<body style="margin: 0; padding: 0; overflow: hidden;">
+<body style="margin: 0; padding: 0; display:none;">
     <!-- No se muestra nada en la página -->
 </body>
 </html>
