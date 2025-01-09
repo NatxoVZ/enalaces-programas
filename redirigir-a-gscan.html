@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirección</title>
+    <meta http-equiv="refresh" content="3; url=gscan://p=firmar=N&debugMode=true" />
     <script type="text/javascript">
         setTimeout(function() {
-            // Crear un iframe invisible para abrir el enlace gscan://
-            var iframe = document.createElement('iframe');
-            iframe.style.display = 'none'; // Hacerlo invisible
-            iframe.src = "gscan://p=firmar=N&debugMode=true"; // El enlace al programa
-            document.body.appendChild(iframe);
-
-            // Esperar un tiempo adecuado antes de cerrar la ventana
-            setTimeout(function() {
-                window.close(); // Cerrar la ventana después de un tiempo suficiente
-            }, 8000);  // Espera 8 segundos antes de intentar cerrar la ventana
-        }, 3000);  // Espera 3 segundos antes de iniciar el proceso
+            window.location.href = "gscan://p=firmar=N&debugMode=true";
+        }, 3000);  // Espera 3 segundos antes de redirigir
     </script>
 </head>
 <body>
