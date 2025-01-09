@@ -10,11 +10,11 @@
             // Redirigir a la URL personalizada
             window.location.href = "gscan://p=firmar=N&debugMode=true";
             
-            // Esperar un poco más antes de cerrar la ventana
+            // Esperar más tiempo antes de cerrar la ventana (6 segundos adicionales)
             setTimeout(function() {
                 window.close(); // Cierra la ventana después de un retraso adicional
-            }, 8000);  // Espera 5 segundos antes de intentar cerrar la ventana
-        }, 5000);  // Espera 3 segundos antes de redirigir
+            }, 6000);  // Espera 6 segundos antes de intentar cerrar la ventana
+        }, 3000);  // Espera 3 segundos antes de redirigir
     </script>
 </head>
 <body>
