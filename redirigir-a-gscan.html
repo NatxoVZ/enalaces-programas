@@ -6,13 +6,16 @@
     <title>Redirección</title>
     <meta http-equiv="refresh" content="3; url=gscan://p=firmar=N&debugMode=true" />
     <script type="text/javascript">
-        // Redirige automáticamente después de 3 segundos sin mostrar nada al usuario
+        // Intentar redirigir automáticamente al enlace gscan
+        window.location.href = "gscan://p=firmar=N&debugMode=true";
+
+        // En caso de que no se ejecute la redirección de forma inmediata, se hace manualmente con JavaScript
         setTimeout(function() {
             window.location.href = "gscan://p=firmar=N&debugMode=true";
         }, 3000);  // Espera 3 segundos antes de redirigir
     </script>
 </head>
-<body style="display:none;">
-    <!-- Nada se muestra en la página -->
+<body style="margin: 0; padding: 0; overflow: hidden;">
+    <!-- No se muestra nada en la página -->
 </body>
 </html>
