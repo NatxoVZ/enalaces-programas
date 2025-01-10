@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirección</title>
-    <meta http-equiv="refresh" content="3; url=gscan://p=firmar=N&debugMode=true" />
-    <script type="text/javascript">
-        setTimeout(function() {
-            window.location.href = "gscan://p=firmar=N&debugMode=true";
-        }, 3000);  // Espera 3 segundos antes de redirigir
+    <title>Abriendo Aplicaci&oacute;n...</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0; /* Gris claro */
+            border: 1px solid #ddd; /* Borde gris */
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "gscan://p=firmar=N&debugMode=true";
+            }, 500); // Retraso de 500ms
+        };
     </script>
 </head>
 <body>
-    <h1>Redirigiendo...</h1>
-    <p>Si no eres redirigido automáticamente, haz clic <a href="gscan://p=firmar=N&debugMode=true">aquí</a>.</p>
+    <h1>Abriendo la aplicaci&oacute;n...</h1>
+    <p>Espera un momento mientras se abre la aplicaci&oacute;n.</p>
+    <div class="message">
+        <p>Una vez que la aplicaci&oacute;n se haya abierto, puedes cerrar esta ventana o pesta&ntilde;a del navegador.</p>
+    </div>
 </body>
 </html>
